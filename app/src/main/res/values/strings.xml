@@ -1,0 +1,14 @@
+<resources>
+	 <string name="app_name">News App Nanodegrees Udacity</string>
+
+
+	 <!-- Tools -->
+	 <string name="item_news_headline">This is a headline</string>
+	 <string name="item_news_summary">This is some text summary about the article, this article
+    has lots of interesting things in it but this is all you will read in this summary..</string>
+	 <string name="item_news_section">Android</string>
+	 <string name="item_news_author">Ali Al Fayed</string>
+	 <string name="item_news_date">13 Dec 2019</string>
+	 <string name="main_no_have_data">No Have Data</string>
+	 <string name="main_no_internet">No internet connection..</string>
+</resources>

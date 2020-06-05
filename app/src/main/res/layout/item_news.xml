@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+	 xmlns:app="http://schemas.android.com/apk/res-auto"
+	 xmlns:tools="http://schemas.android.com/tools"
+	 android:layout_width="match_parent"
+	 android:layout_height="wrap_content"
+	 android:layout_marginBottom="10dp"
+	 app:cardCornerRadius="5dp"
+	 app:contentPadding="5dp">
+
+	 <androidx.constraintlayout.widget.ConstraintLayout
+		  android:layout_width="match_parent"
+		  android:layout_height="wrap_content">
+
+		  <ImageView
+			   android:id="@+id/imgNews"
+			   android:layout_width="@dimen/layout_wight_zero"
+			   android:layout_height="@dimen/layout_wight_230dp"
+			   android:scaleType="centerCrop"
+			   app:layout_constraintEnd_toEndOf="parent"
+			   app:layout_constraintStart_toStartOf="parent"
+			   app:layout_constraintTop_toTopOf="parent"
+			   app:srcCompat="@drawable/ic_launcher_background"
+			   tools:ignore="ContentDescription" />
+
+		  <TextView
+			   android:id="@+id/txtSection_News"
+			   android:layout_width="wrap_content"
+			   android:layout_height="wrap_content"
+			   android:layout_centerHorizontal="true"
+			   android:layout_centerVertical="true"
+			   android:layout_marginTop="@dimen/layout_margin_8dp"
+			   android:background="@color/off_black"
+			   android:padding="@dimen/layout_padding_10dp"
+			   android:text="@string/item_news_section"
+			   android:textColor="@color/white"
+			   app:layout_constraintEnd_toEndOf="parent"
+			   app:layout_constraintTop_toTopOf="parent" />
+
+		  <TextView
+			   android:id="@+id/txtHeadline_News"
+			   android:layout_width="@dimen/layout_wight_zero"
+			   android:layout_height="wrap_content"
+			   android:layout_centerHorizontal="true"
+			   android:layout_centerVertical="true"
+			   android:layout_marginTop="@dimen/layout_margin_8dp"
+			   android:background="@color/off_black"
+			   android:padding="@dimen/layout_padding_10dp"
+			   android:text="@string/item_news_headline"
+			   android:textColor="@android:color/white"
+			   android:textSize="@dimen/textSize_20sp"
+			   android:textStyle="bold"
+			   app:layout_constraintBottom_toBottomOf="@+id/imgNews"
+			   app:layout_constraintEnd_toEndOf="parent"
+			   app:layout_constraintStart_toStartOf="parent" />
+
+		  <TextView
+			   android:id="@+id/txtSummary_News"
+			   android:layout_width="@dimen/layout_wight_zero"
+			   android:layout_height="wrap_content"
+			   android:layout_marginTop="@dimen/layout_margin_8dp"
+			   android:text="@string/item_news_summary"
+			   app:layout_constraintEnd_toEndOf="@+id/txtHeadline_News"
+			   app:layout_constraintStart_toStartOf="@+id/txtHeadline_News"
+			   app:layout_constraintTop_toBottomOf="@+id/txtHeadline_News" />
+
+		  <TextView
+			   android:id="@+id/txtDate_News"
+			   android:layout_width="wrap_content"
+			   android:layout_height="wrap_content"
+			   android:layout_marginTop="@dimen/layout_margin_8dp"
+			   android:layout_marginBottom="@dimen/layout_margin_8dp"
+			   android:text="@string/item_news_date"
+			   app:layout_constraintBottom_toBottomOf="parent"
+			   app:layout_constraintEnd_toEndOf="@+id/txtSummary_News"
+			   app:layout_constraintTop_toBottomOf="@+id/txtSummary_News" />
+
+		  <TextView
+			   android:id="@+id/txtAuthor_News"
+			   android:layout_width="wrap_content"
+			   android:layout_height="wrap_content"
+			   android:layout_marginEnd="@dimen/layout_margin_8dp"
+			   android:text="@string/item_news_author"
+			   app:layout_constraintBottom_toBottomOf="@+id/txtDate_News"
+			   app:layout_constraintEnd_toStartOf="@+id/divider"
+			   app:layout_constraintTop_toTopOf="@+id/txtDate_News" />
+
+		  <View
+			   android:id="@+id/divider"
+			   android:layout_width="@dimen/layout_wight_1dp"
+			   android:layout_height="@dimen/layout_wight_zero"
+			   android:layout_marginEnd="@dimen/layout_margin_8dp"
+			   android:background="?android:attr/listDivider"
+			   app:layout_constraintBottom_toBottomOf="@+id/txtDate_News"
+			   app:layout_constraintEnd_toStartOf="@+id/txtDate_News"
+			   app:layout_constraintTop_toTopOf="@+id/txtDate_News" />
+	 </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
